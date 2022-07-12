@@ -44,11 +44,12 @@ class MainTest {
     @Test
     void substituteElements(){
         FizzBuzz fb = new FizzBuzz();
-        String[] fbArr = new String[] {"fire", "fib", "lib"};
+        String[] fbArr = new String[] {"fire", "fib", "lib", null};
         fb.fizzBuzzArray(fbArr);
 
         assertEquals("Fizz", fbArr[0]);
         assertEquals("FizzBuzz", fbArr[1]);
         assertEquals("Buzz", fbArr[2]);
+        assertNull(fbArr[3]);
     }
 }
